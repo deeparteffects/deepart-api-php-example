@@ -7,6 +7,7 @@ $uploadOk = false;
 $imageFileType = pathinfo($_FILES["fileToUpload"]["name"],PATHINFO_EXTENSION);
 
 $style_id = $_POST['style'];
+$image_size = $_POST['quality'];
 
 if(isset($_POST["submit"])) {
     $check = getimagesize($target_file);
@@ -16,11 +17,6 @@ if(isset($_POST["submit"])) {
         echo "File is not an image.";
         $uploadOk = false;
     }
-}
-
-if(!isset($style_id)) {
-    echo "Please choose a style";
-    $uploadOk = false;
 }
 
 // Allow certain file formats
@@ -37,7 +33,7 @@ if ($uploadOk == false) {
     try {
         $image = base64_encode(file_get_contents($target_file));
         $uploadRequest = new \Deeparteffects\Client\Model\UploadRequest();
-        $uploadRequest->setImageSize(512);
+        $uploadRequest->setImageSize($image_size);
         $uploadRequest->setStyleId($style_id);
         $uploadRequest->setImageBase64Encoded($image);
         $result = $api_instance->uploadPost($uploadRequest);
