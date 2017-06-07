@@ -1,0 +1,5 @@
+{
+    "require": {
+        "deeparteffects/sdk-php": "^1.0"
+    }
+}
