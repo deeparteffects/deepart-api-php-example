@@ -3,6 +3,10 @@ Here is an example on how you can use the Deep Art Effects API for PHP to displa
 
 If you want to try out the example, change the values for the api_key, access_key and secret_key in client.php to your key values.
 
+![Screenshot-1](/screenshots/screenshot-1.png)
+![Screenshot-2](/screenshots/screenshot-2.png)
+![Screenshot-3](/screenshots/screenshot-3.png)
+
 ## Requirements
 
 PHP 5.4.0 and later
@@ -13,7 +17,7 @@ PHP 5.4.0 and later
 To install the bindings via [Composer](http://getcomposer.org/), run the command
 
 ```
-    composer require deeparteffects/sdk-php
+composer require deeparteffects/sdk-php
 ```
 
 ### Manual Installation
@@ -21,7 +25,7 @@ To install the bindings via [Composer](http://getcomposer.org/), run the command
 Download the sdk files from [Deep Art Effects SDK for PHP](https://developer.deeparteffects.com/page/sdk/) and include `autoload.php`:
 
 ```php
-    require_once('/path/to/sdk-php/autoload.php');
+require_once('/path/to/sdk-php/autoload.php');
 ```
 
 ## Getting Started
