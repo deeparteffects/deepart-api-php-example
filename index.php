@@ -28,16 +28,6 @@
     </p>
 
     <p>
-        <label>Quality
-            <select name="quality">
-                <option value="512">Low Quality</option>
-                <option value="1080">Medium Quality</option>
-                <option value="1980">High Quality</option>
-            </select>
-        </label>
-    </p>
-
-    <p>
         <input type="submit" value="Submit" name="submit">
     </p>
 
