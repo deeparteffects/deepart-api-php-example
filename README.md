@@ -3,7 +3,7 @@ Here is an example on how you can use the Deep Art Effects API for PHP to displa
 
 If you want to try out the example, change the values for the api_key, access_key and secret_key in client.php to your key values.
 
-Try out the [Online Demo Version](https://developer.deeparteffects.com/demo/)
+Try out the [Online Demo](https://www.deeparteffects.com/demo/)
 
 ![Screenshot-1](/screenshots/screenshot-1.png)
 ![Screenshot-2](/screenshots/screenshot-2.png)
