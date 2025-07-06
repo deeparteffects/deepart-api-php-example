@@ -109,3 +109,9 @@ try {
 
 ?>
 ```
+
+## Using Docker
+```sh
+  docker compose up --build
+```
+Then visit: http://localhost:8080

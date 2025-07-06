@@ -1,0 +1,8 @@
+services:
+  deepart-api-php:
+    build: .
+    container_name: deepart-api-php
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
